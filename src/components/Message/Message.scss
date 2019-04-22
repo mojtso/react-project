@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.message {
+    display: flex;
+    max-width: 400px;
+    &__avatar {
+        display: flex;
+        flex-direction: column-reverse;
+        img {
+            border-radius: 50px;
+            width: 33px;
+            height: 33px;
+            margin-right: 13px;
+            margin-top: 13px;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__bubble {
+        align-content: center;
+        background: $blue;
+        border-radius: 12px 12px 12px 0;
+        box-shadow: 0px 5px 5px rgba(54, 116, 255, 0.196733);
+        padding: 5px;
+        margin-bottom: 1px;
+    }
+
+    &__text {
+        padding-top: 10px;
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+    }
+
+    &__date {
+        font-size: 10px;
+        opacity: 0.4;
+    }
+
+}
