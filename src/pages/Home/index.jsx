@@ -1,5 +1,4 @@
 import React from 'react'
-import distanceInWordsToNow from 'date-fns/distance_in_words_to_now'
 import { Route } from 'react-router-dom'
 import { Message } from 'components'
 
@@ -9,8 +8,21 @@ const Home = () => (
     <section className="home">
         <Message 
             avatar="https://pbs.twimg.com/profile_images/1102277767524163584/7lJaR7qP_200x200.jpg"
-            text="hello" 
-            date="Mon Apr 22 2019 21:29"
+            text={"Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Cras sed felis eget velit aliquet sagittis id. Sit amet luctus venenatis lectus magna fringilla urna"} 
+            date={new Date().toISOString()}
+            isMe={false}
+        />
+        <Message 
+            avatar="https://pbs.twimg.com/profile_images/1102277767524163584/7lJaR7qP_200x200.jpg"
+            text={"Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Cras sed felis eget velit aliquet sagittis id. Sit amet luctus venenatis lectus magna fringilla urna"} 
+            date={new Date().toISOString()}
+            isMe={true}
+        />
+        <Message 
+            avatar="https://pbs.twimg.com/profile_images/1102277767524163584/7lJaR7qP_200x200.jpg"
+            text={"Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Cras sed felis eget velit aliquet sagittis id. Sit amet luctus venenatis lectus magna fringilla urna"} 
+            date={new Date().toISOString()}
+            isMe={false}
         />
     </section>
 )
