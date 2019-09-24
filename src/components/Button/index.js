@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Button as BaseButton } from 'antd'
 import './Button.scss';
-import classNames from 'classnames'
+import classNames from 'classnames';
 
 const Button = props => (
      <BaseButton 
