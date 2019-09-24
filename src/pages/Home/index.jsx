@@ -1,5 +1,4 @@
 import React from 'react'
-import distanceInWordsToNow from 'date-fns/distance_in_words_to_now'
 import { Route } from 'react-router-dom'
 import { Message } from 'components'
 
@@ -9,8 +8,21 @@ const Home = () => (
     <section className="home">
         <Message 
             avatar="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
-            text="hello" 
-            date="Mon Apr 22 2019 21:29"
+            text={"Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Cras sed felis eget velit aliquet sagittis id. Sit amet luctus venenatis lectus magna fringilla urna"} 
+            date={new Date().toISOString()}
+            isMe={false}
+        />
+        <Message 
+            avatar="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+            text={"Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Cras sed felis eget velit aliquet sagittis id. Sit amet luctus venenatis lectus magna fringilla urna"} 
+            date={new Date().toISOString()}
+            isMe={true}
+        />
+        <Message 
+            avatar="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light"
+            text={"Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Cras sed felis eget velit aliquet sagittis id. Sit amet luctus venenatis lectus magna fringilla urna"} 
+            date={new Date().toISOString()}
+            isMe={false}
         />
     </section>
 )
