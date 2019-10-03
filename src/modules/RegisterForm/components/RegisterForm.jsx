@@ -1,18 +1,17 @@
-import React from 'react'
-import { Form, Icon, Input } from 'antd'
-import { Link } from 'react-router-dom'
-import { Block, Button } from 'components'
+import React from 'react';
+import { Form, Icon, Input } from 'antd';
+import { Link } from 'react-router-dom';
+import { Block, Button } from 'components';
 
 
 class RegisterForm extends React.Component {
 
     render() {
-        const success = true
+        const success = true;
         return (
             <div>
                 <div className="auth__top">
-                    <h2>Authenticate</h2>
-                    <p>You have to register for grant access</p>
+                    <h2>Authenticated</h2>
                 </div>
                 <Block>
                     {success?
@@ -23,8 +22,9 @@ class RegisterForm extends React.Component {
                                 theme="twoTone" 
                             />
                         </div>
-                        <h2>You have successfully registered</h2>
-                        <p>Make sure you complete your profile</p>
+                        <Link to="/im">
+                            You have successfully registered
+                        </Link>
                     </div>
                     :
                     <Form onSubmit={this.handleSubmit} className="login-form">
@@ -81,4 +81,4 @@ class RegisterForm extends React.Component {
     }
 }
 
-export default RegisterForm
+export default RegisterForm;

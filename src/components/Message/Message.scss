@@ -3,8 +3,12 @@
 .message {
     $self: &;
     display: flex;
-    max-width: 400px;
     padding: 5px;
+
+    &--friend {
+        padding-right: 20%;
+    }
+
     &__avatar {
         display: flex;
         flex-direction: column-reverse;
@@ -40,8 +44,8 @@
     }
 
     &--isme {
-        display: flex;
         flex-direction: row-reverse;
+        padding-left: 20%;
 
         #{self}__content {
             margin-bottom: 15px;

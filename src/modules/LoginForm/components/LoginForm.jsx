@@ -1,6 +1,6 @@
-import React from 'react'
-import { Form, Icon, Input } from 'antd'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Form, Icon, Input } from 'antd';
+import { Link } from 'react-router-dom';
 import { Block, Button } from 'components';
 
 class LoginForm extends React.Component {
@@ -15,7 +15,7 @@ class LoginForm extends React.Component {
                 </div>
                 <Block>
                     <Form onSubmit={this.handleSubmit} className="login-form">
-                        <Form.Item validateStatus="success" hasFeedback>
+                        <Form.Item validateStatus="warning" hasFeedback>
                             <Input 
                                 prefix={<Icon 
                                 type="user" 
@@ -25,7 +25,7 @@ class LoginForm extends React.Component {
                             />
                         </Form.Item>
 
-                        <Form.Item>
+                        <Form.Item validateStatus="warning">
                             <Input 
                                 prefix={<Icon type="lock" 
                                 style={{ color: 'rgba(0,0,0,.25)' }} />} 
@@ -53,4 +53,4 @@ class LoginForm extends React.Component {
     }
 }
 
-export default LoginForm
+export default LoginForm;
